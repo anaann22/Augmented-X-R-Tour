@@ -1,4 +1,4 @@
-.intro-container {
+.guide-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,11 +19,11 @@
     z-index: 1;
 }
 
-.pozaIntro {
+.poza {
     position: absolute;
-    left: calc(19cm - 20px);
+    right: calc(19cm - 20px);
     top: calc(2.50cm - 20px);
-    right: calc(2.50cm - 20px);
+    left: calc(2.50cm - 20px);
     bottom: calc(2.50cm - 20px);
     border-radius: 50px;
     z-index: 2;
@@ -36,11 +36,11 @@
     object-fit: cover;
 }
 
-.textIntro {
+.text {
     position: absolute;
-    left: calc(1cm - 20px);
+    right: calc(1cm - 20px);
     top: calc(2.50cm - 20px);
-    right: calc(19cm - 20px);
+    left: calc(19cm - 20px);
     bottom: calc(2.50cm - 20px);
     border-radius: 50px;
     z-index: 2;
@@ -48,55 +48,32 @@
     color: white;
     background-color: #000000;
     text-align: center;
-    font-family: "Garamond";
+    font-family: "Georgia";
 }
 
-.textIntro .line1 {
-    font-size: 24px; /* Dimensiunea pentru prima linie */
+.text .line1 {
+    font-size: 16px; /* Dimensiunea pentru prima linie */
 }
 
-.textIntro .line2 {
-    font-size: 18px; /* Dimensiunea pentru a doua linie */
+.text .line2 {
+    font-size: 13px; /* Dimensiunea pentru a doua linie */
 }
 
-.buttonIntro {
+.button {
     background-color: #221F1F;
     border-radius: 10px;
     border-color:#7f7f7f;
     position: absolute;
     align-self: center;
     width: 300px; /* lățimea butonului */
-    height: 45px; /* înălțimea butonului */
+    height: 32px; /* înălțimea butonului */
     color: white;
-    top: calc(9cm - 20px);
+    top: calc(13.5cm - 20px);
     z-index: 3;
-    left: calc(6cm - 20px);
+    left: calc(24cm - 20px);
     font-family: "Georgia";
-    font-size: 15px;
+    font-size: 13px;
 }
 
-.button2 {
-    background-color: white;
-    border-radius: 15px;
-    position: absolute;
-    align-self: center;
-    width: 200px;
-    height: 30px;
-    top: calc(12cm - 20px);
-    z-index: 3;
-    left: calc(7cm - 20px);
-    font-family: "Georgia";
-}
 
-.button3 {
-    background-color: white;
-    border-radius: 15px;
-    position: absolute;
-    align-self: center;
-    width: 200px;
-    height: 30px;
-    top: calc(13cm - 20px);
-    z-index: 3;
-    left: calc(7cm - 20px);
-    font-family: "Georgia";
-}
+
