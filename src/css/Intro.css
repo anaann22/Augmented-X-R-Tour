@@ -84,7 +84,7 @@
     height: 30px;
     top: calc(12cm - 20px);
     z-index: 3;
-    left: calc(7cm - 20px);
+    left: calc(7.3cm - 20px);
     font-family: "Georgia";
 }
 
@@ -97,6 +97,6 @@
     height: 30px;
     top: calc(13cm - 20px);
     z-index: 3;
-    left: calc(7cm - 20px);
+    left: calc(7.3cm - 20px);
     font-family: "Georgia";
 }
