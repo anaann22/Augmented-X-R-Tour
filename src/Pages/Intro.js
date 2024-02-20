@@ -24,7 +24,7 @@ const Intro = () => {
                   <p class="line2">vizualuizarea 3D.</p>
                 </div>
                 <button className='buttonIntro' onClick={() => navigateTo("/Guide")}>Urmărește ghidul de utilizare</button>
-                <button className='button2'>Conectare</button>
+                <button className='button2' onClick ={() => navigateTo("/Login")}>Conectare</button>
                 <button className='button3'>Autentificare</button>
             </div>
         </div>
