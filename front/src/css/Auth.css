@@ -1,4 +1,4 @@
-.login-container {
+.auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.dreptunghi {
+.dreptunghiAuth {
     position: absolute;
     left: calc(2.50cm - 20px);
     top: calc(2.50cm - 20px);
@@ -21,7 +21,7 @@
 
 }
 
-.dreptunghi img {
+.dreptunghiAuth img {
     border-radius: 50px;
     width: 100%;
     height: 100%;
@@ -29,8 +29,9 @@
     z-index: 2;
 }
 
-.but1 {
+.but1Auth {
     position: absolute;
+    color: white;
     height: 50px;
     width: 300px;
     border-radius: 20px;
@@ -38,7 +39,7 @@
     background-color: rgba(44, 44, 44, 0.9); /* Gri cu 50% opacitate */
     align-items: start;
     z-index: 3;
-    top: calc(3.50cm - 20px);
+    top: calc(2.50cm - 20px);
     left: calc(14cm - 20px);
     border: none; /* Elimină border-ul */
     text-align: left; /* Aliniere la stânga */
@@ -46,7 +47,7 @@
 }
 
 
-.but2 {
+.but2Auth {
     position: absolute;
     height: 50px;
     width: 300px;
@@ -56,7 +57,25 @@
     background-color: rgba(44, 44, 44, 0.9); /* Gri cu 50% opacitate */
     align-items: start;
     z-index: 3;
-    top: calc(5.5cm - 20px);
+    top: calc(4.50cm - 20px);
+    left: calc(14cm - 20px);
+    border: none; /* Elimină border-ul */
+    text-align: left; /* Aliniere la stânga */
+    padding-left: 20px; /* Spațiere la stânga pentru text */
+    overflow: hidden;
+}
+
+.but3Auth {
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    opacity: 0.5; /* Opacitatea setată la 50% */
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(44, 44, 44, 0.9); /* Gri cu 50% opacitate */
+    align-items: start;
+    z-index: 3;
+    top: calc(6.50cm - 20px);
     left: calc(14cm - 20px);
     border: none; /* Elimină border-ul */
     text-align: left; /* Aliniere la stânga */
@@ -65,13 +84,13 @@
 }
 
 
-.text1 {
+.text1Auth {
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12px;
 }
 
-.buttonLog {
+.buttonAuth {
     color: white;
     border-radius: 15px;
     width: 200px;
@@ -79,12 +98,25 @@
     border: none;
     text-align: center;
     background-color: #1e1e1e;
+    margin-top: none;
+}
+
+.buttonLog {
+    color: white;
+    border-radius: 15px;
+    width: 170px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    background-color: #505050;
+    margin-top: none;
+    background-color: rgba(44, 44, 44, 0.5);
 }
 
 
-.connect-container {
+.connect-container-auth {
     position: absolute;
-    top: calc(27% + 150px);
+    top: calc(10.5cm - 20px);
     right: calc(20cm - 175px);
     left: calc(14.5cm - 20px);;
     z-index: 3;
@@ -94,7 +126,7 @@
     text-align: center;
 }
 
-.buttonGoogle {
+.buttonGoogleAuth {
     color: #000000;
     border-radius: 15px;
     border: none;
@@ -104,10 +136,10 @@
     opacity: 0.4;
     text-align: center; /* Afișăm textul în centru */
     padding: 5px;
-    margin-top: 45px; /* Adăugăm un spațiu între butoane */
+    margin-top: 35px; /* Adăugăm un spațiu între butoane */
 }
 
-.buttonGoogle img {
+.buttonGoogleAuth img {
     vertical-align: middle;
     margin-right: 5px;
     max-width: 100%;
@@ -119,13 +151,6 @@
     opacity: 1; 
   }
 
-.animated-button {
-    transition: all 0.2s ease-in-out;
-  }
-  
-.animated-button.hovered {
-    transform: scale(1.1);
-  }
 
 
 

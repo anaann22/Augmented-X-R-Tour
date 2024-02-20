@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import login from '../Poze/login.jpg';
 import social from '../Poze/social.png';
 
+
+
 const Login = () => {
     const navigate = useNavigate();
 
@@ -24,7 +26,7 @@ const Login = () => {
     </div>
     <div className='connect-container'>
         <p className="text1">Ai uitat parola?</p>
-        <button className='buttonLog' onClick = {() => navigateTo("/Art")}>Conectare</button>
+        <button className='buttonAuth' onClick = {() => navigateTo("/Art")}>Conectare</button>
         <p className="text1">Nu ai încă cont?</p>
         <button className='buttonLog' onClick = {() => navigateTo("/Auth")}>Autentificare</button>
         <button className="buttonGoogle">
@@ -33,7 +35,6 @@ const Login = () => {
         </button>
     </div>
 </div>
-
     )
 }
 
