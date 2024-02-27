@@ -1,6 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
-
+import { UserController } from './Controllers/index.js';
 
 const app = express();
 
@@ -21,4 +21,6 @@ mongoose
     }
     console.log('Server ok');
   });
+
+  app.post('/auth/register', UserController.register);
 
