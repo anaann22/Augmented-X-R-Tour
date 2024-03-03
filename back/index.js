@@ -23,4 +23,5 @@ mongoose
   });
 
   app.post('/auth/register', UserController.register);
+  app.post('/auth/login', UserController.login);
 
