@@ -6,7 +6,17 @@ import Art from './Pages/Art.js';
 import Auth from './Pages/Auth.js';
 import { Earth } from './Earth.tsx';
 import { Canvas, useThree } from '@react-three/fiber';
-import { ContactShadows, OrbitControls } from '@react-three/drei';
+import {  OrbitControls } from '@react-three/drei';
+import * as THREE from 'three';
+
+function SkySphere() {
+  return (
+    <mesh>
+      <sphereGeometry args={[50, 32, 32]} />
+      <meshBasicMaterial side={2} map={new THREE.TextureLoader().load('..')} />
+    </mesh>
+  );
+}
 
 function Controls(){
   const {
@@ -23,6 +33,7 @@ function ThreeScene() {
       <ambientLight position={[5, 5, 5]} intensity={1} />
       <pointLight position={[-3, -3, 2]} />
       <Controls />
+      <SkySphere/>
       <Earth />
     </Canvas>
   );

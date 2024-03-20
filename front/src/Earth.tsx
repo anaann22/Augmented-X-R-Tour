@@ -35,7 +35,7 @@ export function Earth(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials, animations } = useGLTF('/earth/scene.gltf') as GLTFResult
   const { actions } = useAnimations(animations, group)
   return (
-    <group {...props} dispose={null} scale = {10}>
+    <group {...props} dispose={null} scale = {13}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.002}>
           <group name="fc09fa6deb6c45f687e724438fed81adfbx" rotation={[Math.PI / 2, 0, 0]}>
