@@ -4,6 +4,30 @@ import Guide from './Pages/Guide.js';
 import Login from './Pages/Login.js';
 import Art from './Pages/Art.js';
 import Auth from './Pages/Auth.js';
+import { Earth } from './Earth.tsx';
+import { Canvas, useThree } from '@react-three/fiber';
+import { ContactShadows, OrbitControls } from '@react-three/drei';
+
+function Controls(){
+  const {
+    camera,
+    gl: {domElement},
+  } = useThree();
+
+  return <OrbitControls args={[camera, domElement]}  />
+}
+
+function ThreeScene() {
+  return (
+    <Canvas style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: -1 }}>
+      <ambientLight position={[5, 5, 5]} intensity={1} />
+      <pointLight position={[-3, -3, 2]} />
+      <Controls />
+      <Earth />
+    </Canvas>
+  );
+}
+
 
 function App() {
   return (
@@ -14,6 +38,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Art" element={<Art />} />
         <Route path="/Auth" element={<Auth />} />
+        <Route path="/Earth" element={<ThreeScene/>}/>
       </Routes>
       </Router>
   );
