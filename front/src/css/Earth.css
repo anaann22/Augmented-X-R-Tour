@@ -1,0 +1,30 @@
+.textEarth {
+    position: absolute;
+    right: calc(1cm - 20px);
+    top: calc(13cm - 20px);
+    left: calc(22cm - 20px);
+    bottom: calc(2.50cm - 20px);
+    border-radius: 50px;
+    z-index: 2;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Georgia";
+    
+}
+
+.textE2 {
+    position: absolute;
+    right: calc(22cm - 20px);
+    top: calc(13cm - 20px);
+    left: calc(1cm - 20px);
+    bottom: calc(2.50cm - 20px);
+    border-radius: 50px;
+    z-index: 2;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    text-align: center;
+    font-family: "Georgia";
+}
